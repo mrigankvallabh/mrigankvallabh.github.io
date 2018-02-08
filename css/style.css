@@ -1,0 +1,370 @@
+/* Body */
+body {
+  margin:0;
+  padding: 0;
+}
+
+abbr{
+  text-decoration: 0.1em dotted;
+  cursor: help;
+}
+/* Fixed Top Navbar */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 99px;
+  border: 1px solid #182153;
+  z-index: 99;
+}
+
+/* Keep navitems to Right */
+.navbar .navitems {
+  float:right;
+}
+
+/* Styling navitems */
+.navbar a {
+  display: inline-block;
+  color: #182153;
+  padding: 35px 16px;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  color: #AEB4D4/*#8D96C8*/;
+  transition: 0.4s;
+}
+
+/* Styling Resume Name on left of Navbar */
+#cvname {
+  font-size: 30px;
+  font-weight: 300;
+  padding: 30px 16px;
+  text-transform: none;
+}
+
+/* Background for Personal information Jumbotron */
+.pinfobg {
+  background-image: url("../images/downtownbg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 583px;
+  margin-top: 101px;
+}
+
+#bgoverlay {
+  background-color: rgba(24, 33, 83, 0.8);
+  width: 100%;
+  height: 583px;
+}
+
+/* This box has two sections: Left for picture and right for information */
+#pinfobox {
+  position: relative;
+  width: 980px;
+  height: inherit;
+  left: calc((100% - 980px) * 0.5);
+}
+
+/* Styling picture */
+#photo {
+  position: absolute;
+  left: 20px;
+  top: 112px;
+  width: 470px;
+  height: 470px;
+  filter: grayscale(100%);
+}
+
+/* box for personal information */
+#pinfodtlbox {
+  background: rgba(241, 241, 241, 1);
+  position: absolute;
+  left: 490px;
+  top: 112px;
+  width: 470px;
+  height: 470px;
+}
+
+#pinfodetails {
+  position: absolute;
+  left: 83px;
+  top: 83px;
+  width: 304px;
+}
+
+/* Various classes of Fonts */
+.font_4 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  font: normal normal 300 28px/1.4em "Lato",sans-serif;
+  color: #182153;
+}
+
+.font_5 {
+  margin: 0;
+  line-height: normal;
+  letter-spacing: normal;
+  font: normal normal 700 20px/1.4em "Lato",sans-serif;
+  color: #182153;
+}
+
+.font_6 {
+  margin: 0;
+  letter-spacing: normal;
+  font: normal normal 600 14px/1.4em "Lato",sans-serif;
+  color: #182153;
+}
+.font_7 {
+  margin: 0;
+  letter-spacing: normal;
+  font: normal normal 300 18px/1.4em "Lato",sans-serif;
+  color: #182153;  
+}
+
+.font_8 {
+  margin: 0;
+  letter-spacing: normal;
+  font: normal normal 300 14px/1.4em "Lato",sans-serif;
+  color: #182153;
+}
+
+.colwhite {
+  color: white;
+}
+/* Classes for Text Aligning CSS */
+.cntr {
+  text-align: center;
+}
+
+.jstfy {
+  text-align: justify;
+  text-justify: distribute;
+}
+
+.subheading {
+  line-height: 1.8em;
+  font-weight: normal;
+}
+
+/* Professional Summary CSS */
+#summary {
+  background-color: rgba(241, 241, 241, 1);
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+/* SM Panel CSS */
+#smpanel {
+  width: 940px;
+  height: 75px;
+  position: relative;
+  left: calc((100% - 980px) * 0.5 + 20px);
+  top: 0px;
+  background-color: rgba(24, 33, 83, 1);
+  overflow: hidden;
+}
+
+#smpanel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 362px;
+  top: 23px;
+  width: 216px;
+  height: 24px;
+}
+
+#smpanel li {
+  list-style: none;
+  margin: 0 24px 0 0;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+/* Short Summary */
+#summbox {
+  position: absolute;
+  left: calc((100% - 980px) * 0.5 + 170px);
+  top: 190px;
+  width: 640px;
+  height: inherit;
+}
+
+/* Experience Title Bar */
+#exptitle {
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+}
+
+.sectitle {
+  line-height: 100px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+
+#exppane {
+  position: relative;
+  width: 980px;
+  height: 600px;
+  left: calc((100% - 980px) * 0.5);
+}
+
+.exptime {
+  width: 470px;
+  height: 200px;
+  position: absolute;
+  left: 20px;
+  border-right: 1px solid rgba(241, 241, 241, 1);
+  box-sizing: border-box;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.expdtls {
+  width: 470px;
+  height: 200px;
+  position: relative;
+  left: 540px;
+}
+
+#edutitle {
+  height: 100px;
+  background-color: white;
+  border-top: 1px solid rgba(241, 241, 241, 1);
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+}
+
+#edupane {
+  position: relative;
+  width: 980px;
+  height: 300px;
+  left: calc((100% - 980px) * 0.5);
+}
+
+.edutime {
+  width: 470px;
+  height: 150px;
+  position: absolute;
+  left: 20px;
+  border-right: 1px solid rgba(241, 241, 241, 1);
+  box-sizing: border-box;
+  padding-right: 50px;
+  text-align: right;
+}
+
+.edudtls {
+  width: 470px;
+  height: 150px;
+  position: relative;
+  left: 540px;
+}
+
+#skilltitle {
+  height: 100px;
+  background-color: rgba(24, 33, 83, 1);
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+}
+
+#skillpane {
+  background-color: rgba(24, 33, 83, 1);
+  height: 380px;
+  position: relative;
+}
+
+#skillbgoverlay {
+  position: absolute;
+  width: 1350px;
+  height: inherit;
+  opacity: 0.11;
+}
+
+#skill-os {
+	position: absolute;
+	left: 100px;
+	top: 50px;
+	width: 317px;
+	height: 280px;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+#skill-lang {
+	position: absolute;
+	left: 517px;
+	top: 50px;
+	width: 317px;
+	height: 280px;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+#skill-tool {
+	position: absolute;
+	left: 934px;
+	top: 50px;
+	width: 317px;
+	height: 280px;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+#xprtztitle {
+  height: 100px;
+  background-color: white;
+  border-top: 1px solid rgba(241, 241, 241, 1);
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+}
+
+#xprtpanel {
+  height: 352px;
+  position:relative;
+}
+#xprtdtl1 {
+	width: 272px;
+	height: 175px;
+	position: absolute;
+	left: 205px;
+	top: 75px;
+}
+
+#xprtdtl2 {
+	width: 272px;
+	height: 175px;
+	position: absolute;
+	left: 530px;
+	top: 75px;
+}
+
+#xprtdtl3 {
+	width: 272px;
+	height: 175px;
+	position: absolute;
+	left: 873px;
+	top: 75px;
+}
+
+#contacttitle {
+  height: 100px;
+  background-color: rgba(241, 241, 241, 1);
+  border-top: 1px solid rgba(241, 241, 241, 1);
+  border-bottom: 1px solid White;
+}
+
+#footer {
+  height: 100px;
+  background-color: white;
+  border-top: 1px solid rgba(241, 241, 241, 1);
+  border-bottom: 1px solid rgba(241, 241, 241, 1);
+}
